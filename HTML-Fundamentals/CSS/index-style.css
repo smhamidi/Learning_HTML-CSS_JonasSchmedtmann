@@ -1,3 +1,37 @@
+html * {
+  font-family: sans-serif;
+}
 h1 {
-  color: blue;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+li {
+  font-size: 20px;
+}
+p {
+  font-size: 22px;
+}
+
+#author {
+  font-style: italic;
+}
+
+footer p {
+  font-size: 12px;
 }
