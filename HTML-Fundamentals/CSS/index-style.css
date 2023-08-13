@@ -1,5 +1,12 @@
-html * {
+body {
+  color: #444;
   font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 h1 {
   font-size: 40px;
@@ -34,4 +41,26 @@ p {
 
 footer p {
   font-size: 12px;
+}
+
+.related-author {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.related-post-list {
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: purple;
+}
+
+nav a:link {
+  font-size: 18px;
 }
