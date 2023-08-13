@@ -1,0 +1,58 @@
+body {
+  border: 3px solid black;
+  font-family: sans-serif;
+  line-height: 1.4;
+  padding: 3px;
+}
+
+.cart-button {
+  /* all: unset; */
+  font-size: 22px;
+  background-color: black;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 4px;
+  padding-left: 4px;
+  text-align: center;
+  border-style: none;
+  border: 3px solid brown;
+  transition: 0.2s;
+}
+
+.cart-button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.product-title {
+  text-align: center;
+  background-color: #f9f9f9;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.price {
+  font-size: 22px;
+}
+
+.additional-options {
+  color: #666;
+  font-size: 15px;
+}
+
+a:link,
+a:visited {
+  text-decoration: underline;
+  color: black;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+li {
+  list-style: square;
+}
