@@ -1,8 +1,35 @@
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
 body {
   color: #444;
   font-family: sans-serif;
 }
 
+.main-header {
+  background-color: #f7f7f7;
+
+  /* the first number is for the top and buttom, the second is for the left and right paddings */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+.post-image {
+  width: 75%;
+}
+.aside {
+  border-top: black solid 4px;
+  border-bottom: black solid 4px;
+  background-color: #f7f7f7;
+
+  padding: 50px 0px;
+  width: 500px;
+}
 h1,
 h2,
 h3 {
@@ -16,10 +43,13 @@ h1 {
 
 h2 {
   font-size: 35px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -28,11 +58,20 @@ h4 {
   text-align: center;
 }
 
+.post-header {
+  margin-bottom: 40px;
+}
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 p {
   font-size: 22px;
+  margin-bottom: 15px;
 }
 
 #author {
@@ -63,4 +102,21 @@ a:visited {
 
 nav a:link {
   font-size: 18px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.copyright {
+  font-size: 17px;
+  font-weight: 800;
+  font-family: "Times New Roman";
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
 }
