@@ -40,9 +40,27 @@ h1 {
   font-style: italic;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
 h2 {
   font-size: 35px;
   margin-bottom: 30px;
+  position: relative;
+}
+h2::after {
+  content: "Top";
+  background-color: burlywood;
+  color: #ff6822;
+  font-size: 15px;
+  padding: 3px 10px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: -10px;
 }
 
 h3 {
@@ -59,6 +77,7 @@ h4 {
 
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 li {
   font-size: 20px;
@@ -71,6 +90,9 @@ li:last-child {
 p {
   font-size: 22px;
   margin-bottom: 15px;
+}
+P::first-line {
+  padding-left: 10px;
 }
 
 #author {
@@ -118,9 +140,33 @@ ol {
 .container {
   width: 85%;
   margin: 0 auto;
+  position: relative;
 }
 
 nav a:link {
   margin: 30px 20px;
   display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+.like {
+  padding: 20px 40px;
+  border: aquamarine solid 3px;
+  font-size: large;
+  border-radius: 10px;
+  background-color: #ca3691;
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.like:hover {
+  border: #ca3691 solid 3px;
+
+  background-color: aquamarine;
+  color: black;
+  cursor: pointer;
 }
