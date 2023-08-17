@@ -36,6 +36,20 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   padding: 10px 30px;
+  position: relative;
+}
+
+.product-title::before {
+  content: "SALE";
+  letter-spacing: 3px;
+  color: black;
+  background-color: red;
+  font-size: 15px;
+  padding: 3px 7px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  border: black double 3px;
 }
 
 .price {
@@ -83,4 +97,50 @@ p {
 
 h3 {
   margin-bottom: 15px;
+}
+
+.available-color {
+  font-style: italic;
+  font-weight: bolder;
+  margin: 0 5px;
+}
+.product-color {
+  width: 50%;
+  display: block;
+}
+
+.product-color div {
+  display: inline-block;
+  border: black solid 2px;
+  border-radius: 25%;
+
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.product-color div:first-child {
+  margin-left: 20px;
+}
+.product-color div:last-child {
+  margin-right: 0;
+}
+
+.product-red {
+  background-color: red;
+}
+.product-orange {
+  background-color: orange;
+}
+.product-brown {
+  background-color: brown;
+}
+.product-yello {
+  background-color: yellow;
+}
+.product-green {
+  background-color: green;
+}
+.product-blue {
+  background-color: blue;
 }
