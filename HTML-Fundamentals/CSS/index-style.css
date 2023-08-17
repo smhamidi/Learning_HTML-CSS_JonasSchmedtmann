@@ -13,7 +13,6 @@ body {
   /* the first number is for the top and buttom, the second is for the left and right paddings */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
 }
 
 article {
@@ -119,4 +118,9 @@ ol {
 .container {
   width: 85%;
   margin: 0 auto;
+}
+
+nav a:link {
+  margin: 30px 20px;
+  display: inline-block;
 }
