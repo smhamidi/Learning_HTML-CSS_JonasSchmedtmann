@@ -1,6 +1,7 @@
 * {
   margin: 0 0;
   padding: 0 0;
+  box-sizing: border-box;
 }
 body {
   color: #444;
@@ -180,7 +181,7 @@ article {
 aside {
   float: right;
   width: 35%;
-  padding: 30px;
+  padding: 50px;
 }
 
 footer {
