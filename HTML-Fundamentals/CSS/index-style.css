@@ -21,13 +21,12 @@ article {
 .post-image {
   width: 75%;
 }
-.aside {
+aside {
   border-top: black solid 4px;
   border-bottom: black solid 4px;
   background-color: #f7f7f7;
 
   padding: 50px 0px;
-  width: 500px;
 }
 h1,
 h2,
@@ -38,6 +37,7 @@ h1 {
   font-size: 40px;
   text-transform: capitalize;
   font-style: italic;
+  padding: 15px;
 }
 
 h1::first-letter {
@@ -110,6 +110,7 @@ footer p {
 
 .related-post-list {
   list-style: none;
+  margin: 0;
 }
 
 a:link {
@@ -169,4 +170,33 @@ nav a:link:last-child {
   background-color: aquamarine;
   color: black;
   cursor: pointer;
+}
+
+article {
+  float: left;
+  width: 60%;
+}
+
+aside {
+  float: right;
+  width: 35%;
+  padding: 30px;
+}
+
+footer {
+  clear: both;
+}
+
+.main-header h1 {
+  float: left;
+}
+
+.main-header nav {
+  float: right;
+}
+
+.main-header::after {
+  content: "";
+  display: block;
+  clear: both;
 }
