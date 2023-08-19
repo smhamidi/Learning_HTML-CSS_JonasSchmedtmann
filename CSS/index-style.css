@@ -17,7 +17,7 @@ body {
 }
 
 article {
-  margin-bottom: 60px;
+  flex: 1;
 }
 .post-image {
   width: 75%;
@@ -98,6 +98,7 @@ P::first-line {
 
 #author {
   font-style: italic;
+  margin: 0;
 }
 
 footer p {
@@ -107,11 +108,15 @@ footer p {
 .related-author {
   font-weight: bold;
   font-size: 18px;
+  margin: 0;
 }
 
 .related-post-list {
   list-style: none;
-  margin: 0;
+  margin-top: 20px;
+}
+.related-post-list {
+  margin: 0 10px;
 }
 
 a:link {
@@ -146,8 +151,8 @@ ol {
 }
 
 nav a:link {
-  margin: 30px 20px;
   display: inline-block;
+  margin-right: 30px;
 }
 
 nav a:link:last-child {
@@ -173,31 +178,39 @@ nav a:link:last-child {
   cursor: pointer;
 }
 
-article {
-  float: left;
-  width: 60%;
-}
-
 aside {
-  float: right;
-  width: 35%;
-  padding: 50px;
+  flex: 0 0 25%;
 }
 
-footer {
-  clear: both;
+/* FlexBox */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.main-header h1 {
-  float: left;
+.author-information {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-.main-header nav {
-  float: right;
+.aside-post-information {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
 }
 
-.main-header::after {
-  content: "";
-  display: block;
-  clear: both;
+.main-two-col {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 70px;
+  gap: 40px;
+}
+
+.aside-post-title {
+  margin-bottom: 10px;
+  display: inline-block;
 }
