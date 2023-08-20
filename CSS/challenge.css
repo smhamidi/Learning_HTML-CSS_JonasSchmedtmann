@@ -6,7 +6,6 @@
 body {
   font-family: sans-serif;
   line-height: 1.4;
-  padding: 3px;
 }
 
 .header {
@@ -14,8 +13,6 @@ body {
 }
 
 .product-image {
-  float: left;
-  padding: 5px;
   width: 33%;
   border-radius: 5%;
 }
@@ -45,6 +42,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   padding: 10px 30px;
+  /* margin-bottom: 10px; */
   position: relative;
 }
 
@@ -69,7 +67,7 @@ body {
 .additional-options {
   color: #666;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 a:link,
@@ -108,15 +106,11 @@ h3 {
   margin-bottom: 15px;
 }
 .product-information {
-  width: 33%;
-  float: left;
   padding: 25px;
   padding-bottom: 5px;
 }
 
 .product-detail {
-  width: 33%;
-  float: right;
   padding: 25px;
   padding-bottom: 5px;
 }
@@ -136,22 +130,14 @@ h3 {
   border-radius: 30%;
 
   padding: 10px;
-  margin-right: 10px;
   margin-top: 10px;
 }
-.price-div {
-  float: left;
+.product-color {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
 }
-.additional-options {
-  float: right;
-}
-.product-color div:first-child {
-  margin-left: 5px;
-}
-.product-color div:last-child {
-  margin-right: 0;
-}
-
 .product-red {
   background-color: red;
 }
@@ -170,7 +156,29 @@ h3 {
 .product-blue {
   background-color: blue;
 }
+/* FlexBox */
+.price-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-.fixfloat {
-  clear: both;
+article {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.product-image {
+  flex: 1;
+}
+
+.product-detail {
+  padding: 20px 0;
+  flex: 1;
+}
+
+.product-information {
+  padding: 20px 0;
+  flex: 1;
 }
