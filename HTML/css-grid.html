@@ -47,7 +47,7 @@
 
         gap: 10px;
       }
-      .el--8 {
+      /* .el--8 {
         grid-column: 2/3;
         grid-row: 1/2;
       }
@@ -58,19 +58,26 @@
       .el--7 {
         grid-column: 1 / -1;
         grid-row: 3/-1;
-      }
+      } */
       .container--2 {
         /* STARTER */
-        display: none;
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>

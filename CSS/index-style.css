@@ -13,7 +13,7 @@ body {
 
   /* the first number is for the top and buttom, the second is for the left and right paddings */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 article {
@@ -113,9 +113,6 @@ footer p {
 
 .related-post-list {
   list-style: none;
-  margin-top: 20px;
-}
-.related-post-list {
   margin: 0 10px;
 }
 
@@ -202,15 +199,48 @@ aside {
   margin-top: 15px;
   gap: 10px;
 }
-
+/*
 .main-two-col {
   display: flex;
   align-items: flex-start;
   margin-bottom: 70px;
   gap: 40px;
-}
+} */
 
-.aside-post-title {
+/* .aside-post-title {
   margin-bottom: 10px;
   display: inline-block;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  align-items: start;
+  column-gap: 75px;
+  row-gap: 50px;
 }
+
+.main-header {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+
+article {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+
+aside {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+
+footer {
+  grid-column: 1/-1;
+  grid-row: 3;
+}
+
+/* aside {
+  padding: 30px 40px;
+} */
