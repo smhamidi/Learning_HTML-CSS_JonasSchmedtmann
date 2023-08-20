@@ -13,7 +13,7 @@ body {
 }
 
 .product-image {
-  width: 33%;
+  width: 100%;
   border-radius: 5%;
 }
 
@@ -162,7 +162,7 @@ h3 {
   align-items: center;
   justify-content: space-between;
 }
-
+/* 
 article {
   display: flex;
   align-items: flex-start;
@@ -181,4 +181,15 @@ article {
 .product-information {
   padding: 20px 0;
   flex: 1;
+} */
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* row-gap: 20px; */
+  align-items: start;
+}
+
+.cart-button {
+  grid-column: 1/-1;
 }
