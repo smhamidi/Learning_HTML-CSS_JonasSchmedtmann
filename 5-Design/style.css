@@ -12,11 +12,18 @@ FONT SIZE SYSTEM (px)
   box-sizing: border-box;
 }
 
+/* 
+Main Color: #087f5b
+Gray Color: #343a40 
+*/
+
 /* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
   font-family: "Roboto Slab", serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -43,6 +50,29 @@ h2 {
   column-gap: 80px;
 }
 
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  font-weight: 500;
+  color: #f1f3f5;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.btn:hover,
+.btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -91,6 +121,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #099268;
+  color: #fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -147,4 +180,5 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  color: #868e96;
 }
